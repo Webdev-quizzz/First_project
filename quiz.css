@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-family: 'Crimson Text', serif;
+    
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/* QUIZ BOX */
+#navbar{
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    border-bottom: solid black 1px;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li{
+    margin: 20px;
+    
+}
+#navbar ul li a{
+    color: black;
+}
+
+#navbar ul li a::after{
+    content:"";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transform: scale(0);
+    transition: transform 0.4s;
+}
+#navbar ul li a:hover::after{
+    transform: scale(1);
+}
+#navbar img{
+    height: 45px;
+    padding: 10px;
+}
+.nav-items .quiz-box{
+    list-style: none;
+}
+.nav-items a, .quiz-box a{
+    text-decoration: none;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+#quiz-box{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    margin: 100px auto;
+    background-color: white;
+    border: black solid 3px;
+    flex-direction: column;
+}
+
+#quiz-box #topic{
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-bottom: solid black 4px;
+    text-align: center;
+   
+}
+#quiz-box #que{
+    font-size: 25px;
+    font-weight: 300;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+#quiz-box #options-div{
+    display: flex;
+    flex-direction: column;
+    border-bottom: black solid 2px;
+}
+#quiz-box #options-div button{
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+    border: none;
+    border-top: 2px solid black;
+}
+#quiz-box #options-div button:hover:not([disabled]){
+    background-color: antiquewhite;
+}
+
+#quiz-box #options-div .correct{
+    background-color: lightgreen;
+    color: black;
+}
+#quiz-box #options-div .incorrect{
+    background-color: lightcoral;
+    color: black;
+}
+
+#next-btn{
+    width: 20%;
+    margin-left: 39%;
+    height: 40px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#next-btn:hover{
+    border-color: lightgreen;
+    padding: 10px;
+    box-shadow: 5px 5px 5px lightpink;
+}
+
+.score{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border-top: solid black 1px;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+}
+#footer-icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon img{
+    width: 25px;
+    opacity: 0.7;
+}
+.footer-icon img:hover{
+    opacity: 1;
+}
+#footer-icon-box li {
+    list-style-type: none;
+    margin: 10px;
+}
+#footer-text{
+    text-align: center;
+    margin: 5px;
+}

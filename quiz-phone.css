@@ -1,0 +1,24 @@
+*{
+    font-size: 15px;
+}
+#navbar img{
+    height: 45px;
+}
+
+#quiz-box{
+    width: 80%;
+    margin-top: 35px;
+}
+#quiz-box #topic{
+    font-size: 25px;
+}
+#quiz-box #que{
+    font-size: 20px;
+}
+#quiz-box #options-div button{
+    font-size: 15px;
+}
+
+#next-btn{
+    font-size: 12px;
+}

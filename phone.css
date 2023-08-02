@@ -1,0 +1,33 @@
+*{
+    font-size: 15px;
+}
+.topics{
+    display: flex;
+    align-items: center;
+}
+.topics ul{
+    flex-direction: column;
+}
+.topics ul li{
+    list-style-type: none;
+}
+#intro{
+    flex-direction: column;
+    align-items: center;
+}
+#intro #intro-img{
+    width: 70%;
+    height: auto;
+}
+#intro #intro-text p{
+    font-size: 15px;
+}
+.heading{
+    font-size: 25px;
+}
+.heading-text{
+    font-size: 20px;
+}
+.quiz .topics .quiz-box img{
+    padding: 0px;
+}
